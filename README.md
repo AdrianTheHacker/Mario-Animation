@@ -35,6 +35,9 @@ This project will be a simple animation where Mario will be moving side to side 
 ## Versions
 ### Version 0.5:
   - Creating layout of project
+### Version 0.9:
+  - Main Animations are added
+  - Images are basic rectangles
 ### Version 1:
   - All of priority 1 added
 ### Version 2:
