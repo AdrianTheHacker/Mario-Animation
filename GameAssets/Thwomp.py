@@ -1,6 +1,8 @@
 from GameAssets.GameObject import GameObject
 from GameSetup import Settings
 
+import pygame
+
 
 class Thwomp(GameObject):
     """
@@ -16,6 +18,8 @@ class Thwomp(GameObject):
 
         self.direction = direction
         self.speed = speed
+
+        self.image = pygame.image.load("images/Spike.png")
 
     """
     Move Method

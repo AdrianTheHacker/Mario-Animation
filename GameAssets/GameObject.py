@@ -13,7 +13,7 @@ class GameObject(pygame.sprite.Sprite):
 
     creates GameObject image and GameObject rect
     """
-    def __init__(self, width, height, xCord, yCord, surface, colour, ):
+    def __init__(self, width, height, xCord, yCord, surface, colour):
         super().__init__()
         self.surface = surface
         self.colour = colour

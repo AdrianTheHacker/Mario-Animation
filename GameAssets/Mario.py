@@ -1,6 +1,8 @@
 from GameAssets.GameObject import GameObject
 from GameSetup import Settings
 
+import pygame
+
 
 class Mario(GameObject):
     """
@@ -17,6 +19,8 @@ class Mario(GameObject):
         self.direction = direction
         self.speed = speed
 
+        self.image = pygame.image.load("images/RobotPerson.png")
+
     """
     Move Method
     
@@ -27,9 +31,13 @@ class Mario(GameObject):
 
         if self.rect.x >= 6 * Settings.tileSize and self.rect.x < 8 * Settings.tileSize:
             self.rect.y -= Settings.tileSize
+            self.image = pygame.image.load("images/RobotPersonJump.png")
 
         elif self.rect.x > 8 * Settings.tileSize and self.rect.x <= 10 * Settings.tileSize:
             self.rect.y += Settings.tileSize
+
+        else:
+            self.image = pygame.image.load("images/RobotPerson.png")
 
     def checkCollision(self):
         if self.rect.x == Settings.WIDTH:

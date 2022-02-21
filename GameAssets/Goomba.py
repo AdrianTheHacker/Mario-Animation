@@ -12,6 +12,8 @@ class Goomba(GameObject):
         self.direction = direction
         self.speed = speed
 
+        self.image = pygame.image.load("images/Bolder.png")
+
     def move(self):
         if self.direction == 'R':
             self.rect.x += self.speed
