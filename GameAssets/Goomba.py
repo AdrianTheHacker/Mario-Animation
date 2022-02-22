@@ -1,8 +1,7 @@
-from GameAssets.GameObject import GameObject
-
-from GameSetup import Settings
-
 import pygame
+
+from GameAssets.GameObject import GameObject
+from GameSetup import Settings
 
 
 class Goomba(GameObject):

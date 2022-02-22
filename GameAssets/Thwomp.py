@@ -1,7 +1,7 @@
+import pygame
+
 from GameAssets.GameObject import GameObject
 from GameSetup import Settings
-
-import pygame
 
 
 class Thwomp(GameObject):

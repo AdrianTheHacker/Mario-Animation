@@ -1,6 +1,6 @@
-from GameSetup import Settings
+import pygame
 
-import pygame, sys
+from GameSetup import Settings
 
 """
 Credit: https://www.geeksforgeeks.org/python-display-text-to-pygame-window/
