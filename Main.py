@@ -11,6 +11,7 @@ from GameSetup import Settings
 pygame.init()
 
 surface = pygame.display.set_mode((Settings.WIDTH, Settings.HEIGHT))
+pygame.display.set_caption("Scratch Animation Project")
 
 entityGroup = pygame.sprite.Group()
 background = pygame.sprite.GroupSingle(BackgroundImage(surface))
